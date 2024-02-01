@@ -9,18 +9,19 @@
 </head>
 <body>
     <script>
-        AFRAME.registerComponent('ar-marker', {
-            init: function () {
-                this.el.addEventListener('markerFound', () => {
-                    // Marker trovato, puoi eseguire le azioni desiderate
-                    console.log('Marker trovato');
-                });
+        // Aspetta che tutte le librerie siano caricate prima di eseguire il codice AFRAME
+        document.addEventListener('DOMContentLoaded', function () {
+            AFRAME.registerComponent('ar-marker', {
+                init: function () {
+                    this.el.addEventListener('markerFound', () => {
+                        console.log('Marker trovato');
+                    });
 
-                this.el.addEventListener('markerLost', () => {
-                    // Marker perso, puoi eseguire le azioni desiderate
-                    console.log('Marker perso');
-                });
-            }
+                    this.el.addEventListener('markerLost', () => {
+                        console.log('Marker perso');
+                    });
+                }
+            });
         });
     </script>
 

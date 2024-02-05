@@ -391,3 +391,10 @@ Tf 0.0000 0.0000 0.0000
 d 1.0000
 Ns 0.0000
 map_Kd Peterguess-bigstock-Natural-Beech-Wood-Background-5136923.jpg
+newmtl diffuse_0_0_255_255
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 1.0000
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0.0000
